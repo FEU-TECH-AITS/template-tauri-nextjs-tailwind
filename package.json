@@ -1,15 +1,18 @@
 {
-  "name": "aits-membership-system",
+  "name": "aits-tauri-nextjs-template",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Your Name Here",
+    "email": "your-email-here@example.com"
+  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "tauri": "tauri",
     "next-start": "cross-env BROWSER=none next dev",
-    "next-build": "next build"
+    "build": "next build",
+    "tauri": "tauri",
+    "dev": "dev",
+    "lint": "next lint && biome check src/",
+    "prepare": "husky"
   },
   "dependencies": {
     "@eslint/config-array": "^0.16.0",
@@ -65,10 +68,10 @@
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.1",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "@tauri-apps/api": "^1.6.0"
   },
   "devDependencies": {
-    "@tauri-apps/api": "^1.6.0",
     "@tauri-apps/cli": "^1.6.2",
     "@types/node": "^20",
     "@types/react": "^18",
@@ -78,6 +81,19 @@
     "eslint-config-next": "14.2.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "@biomejs/biome": "^1.9.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.13",
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
+    "cssnano": "^7.0.6",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "postcss-import": "^16.1.0",
+    "postcss-nesting": "^13.0.0"
   }
 }

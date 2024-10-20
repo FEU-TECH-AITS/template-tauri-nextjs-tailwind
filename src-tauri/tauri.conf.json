@@ -2,12 +2,12 @@
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "build": {
     "beforeBuildCommand": "npm run build",
-    "beforeDevCommand": "npm run start",
+    "beforeDevCommand": "npm run next-start",
     "devPath": "http://localhost:3000",
     "distDir": "../out"
   },
   "package": {
-    "productName": "AITS Membership System",
+    "productName": "AITS Tauri-Nextjs Template",
     "version": "0.1.0"
   },
   "tauri": {
@@ -60,7 +60,7 @@
       {
         "fullscreen": false,
         "resizable": false,
-        "title": "AITS Membership System",
+        "title": "AITS Tauri-Nextjs Template",
         "minWidth": 1280,
         "minHeight": 800,
         "transparent": true,

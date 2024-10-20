@@ -38,3 +38,6 @@ next-env.d.ts
 # lock file
 bun.lockb
 package-lock.json
+
+.husky
+.out
