@@ -58,13 +58,14 @@
     },
     "windows": [
       {
-        "fullscreen": false,
-        "resizable": false,
-        "title": "AITS Tauri-Nextjs Template",
+        "title": "AITS Tauri-NextJS Template",
+        "resizable": true,
         "minWidth": 1280,
         "minHeight": 800,
-        "transparent": true,
-        "maximized": true
+        "transparent": false,
+        "maximized": true,
+        "fileDropEnabled": true,
+        "closable": true
       }
     ]
   }
